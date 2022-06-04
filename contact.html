@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="RO" >
+
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Lucru individual nr.2</title>
+
+    <h1>Cadi's Company</h1>
+
+    <nav>
+        <a href="index.html">Acasa</a>
+        <a href="despre.html">Despre</a>
+        <a href="oferte.html">Oferte</a>
+        <a href="contact.html">Contact</a>
+        <a onclick="document.getElementById('id01').style.display='block'">Login</a>
+        <div class="animation start-contact"></div>
+    </nav>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+            <div class="login-wrap">
+                <div class="login-html">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Logare</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Inregistrare</label>
+                    <div class="login-form">
+
+                        <div class="sign-in-htm">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="group">
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> &nbsp; Pastrează-mă logat/ă</label>
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Loghează-mă">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai uitat parola?</a>
+                            </div>
+                        </div>
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <br>
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Repeta parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Adresa de e-mail</label>
+                                <input id="pass" type="text" class="input">
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Inregistrează-mă">
+                            </div>
+
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai deja un cont?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        var modal = document.getElementById('id01');
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function alerta() {
+            alert("Functie indisponibila");
+        }
+
+        window.onload = function(){
+            document.getElementById('close').onclick = function(){
+                this.parentNode.parentNode.parentNode
+                    .removeChild(this.parentNode.parentNode);
+                return false;
+            };
+        };
+    </script>
+</head>
+
+<body>
+<div class="container">
+    <div class="content">
+        <div class="left-side">
+            <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Adrese</div>
+                <div class="text-one">Strada Iordache Golescu 17, Bucuresti.</div>
+                <div class="text-two">Strada Lugojului 41, Oradea</div>
+            </div>
+            <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Telefoane</div>
+                <div class="text-one">+022 690 069</div>
+                <div class="text-two">+022 0696 908</div>
+            </div>
+            <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">info@cristianfnc.tech</div>
+                <div class="text-two">contact@cristianfnc.tech</div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="topic-text">Trimite un mesaj</div>
+            <p style="text-align: center">Pentru orice nelamurire sau intrebare puteti lasa un mesaj fara ezitare.</p>
+            <form action="#">
+                <div class="input-box">
+                    <label>
+                        <input type="text" placeholder="Introdu numele">
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label>
+                        <input type="text" placeholder="Introdu e-mail-ul">
+                    </label>
+                </div>
+                <div class="input-box message-box">
+                    <label>
+                        <textarea placeholder="Introdu mesajul tau"></textarea>
+                    </label>
+                </div>
+                <div class="button">
+                    <input type="button" value="Trimite" onclick="alerta()">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<hr>
+</body>
+
+<footer>
+    <span style="color: red">@</span> <span>Cadi</span>
+</footer>

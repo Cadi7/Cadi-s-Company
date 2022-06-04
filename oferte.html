@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="no-js" lang="RO" >
+
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="oferte.css">
+    <link rel="stylesheet" href="oferte2.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Lucru individual nr.2</title>
+
+    <h1>Cadi's Company</h1>
+
+    <nav>
+        <a href="index.html">Acasa</a>
+        <a href="despre.html">Despre</a>
+        <a href="oferte.html">Oferte</a>
+        <a href="contact.html">Contact</a>
+        <a onclick="document.getElementById('id01').style.display='block'">Login</a>
+        <div class="animation start-oferte"></div>
+    </nav>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+            <div class="login-wrap">
+                <div class="login-html">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Logare</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Inregistrare</label>
+                    <div class="login-form">
+
+                        <div class="sign-in-htm">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="group">
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> &nbsp; Pastrează-mă logat/ă</label>
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Loghează-mă">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai uitat parola?</a>
+                            </div>
+                        </div>
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <br>
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Repeta parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Adresa de e-mail</label>
+                                <input id="pass" type="text" class="input">
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Inregistrează-mă">
+                            </div>
+
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai deja un cont?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        var modal = document.getElementById('id01');
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function alerta() {
+            alert("Functie indisponibila");
+        }
+
+        window.onload = function(){
+            document.getElementById('close').onclick = function(){
+                this.parentNode.parentNode.parentNode
+                    .removeChild(this.parentNode.parentNode);
+                return false;
+            };
+        };
+    </script>
+
+</head>
+
+<body style="margin-bottom: 100px">
+<div class="container" >
+
+    <header>
+    <h1 align="center">Alege una dintre ofertele companiei</h1>
+    </header>
+
+    <div style="margin-bottom: 50px; margin-left: 70px;">
+        <div id="fdw-pricing-table">
+            <div class="plan plan1">
+                <div class="header">VIP</div>
+                <div class="price">$559</div>
+                <div class="monthly">per curs</div>
+                <ul>
+                    <li><b>200</b> Descarcari</li>
+                    <li><b>99</b> Materiale didactice</li>
+                    <li><b>Program</b> la alegere</li>
+                    <li><b>Cunostinte</b> nelimitate</li>
+                </ul>
+                <a class="signup1" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+            </div>
+            <div class="plan plan2 popular-plan">
+                <div class="header">Profesional</div>
+                <div class="price">$429</div>
+                <div class="monthly">per curs</div>
+                <ul>
+                    <li><b>150</b> Descarcari</li>
+                    <li><b>70</b> Materiale didactice</li>
+                    <li><b>Program</b> la alegere</li>
+                    <li><b>Cunostinte</b> nelimitate</li>
+                </ul>
+                <a class="signup1" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+            </div>
+            <div class="plan plan3">
+                <div class="header">Premium</div>
+                <div class="price">$245</div>
+                <div class="monthly">per curs</div>
+                <ul>
+                    <li><b>120</b> Descarcari</li>
+                    <li><b>50</b> Materiale didactice</li>
+                    <li><b>5</b> Tipuri de program</li>
+                    <li><b>Cunostinte</b> nelimitate</li>
+                </ul>
+                <a class="signup1" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+            </div>
+            <div class="plan plan4">
+                <div class="header">Standard</div>
+                <div class="price">$150</div>
+                <div class="monthly">per curs</div>
+                <ul>
+                    <li><b>100</b> Descarcari</li>
+                    <li><b>20</b> Materiale didactice</li>
+                    <li><b>2</b> Tipuri de program</li>
+                    <li><b>Cunostinte</b> nelimitate</li>
+                </ul>
+                <a class="signup1" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+            </div>
+        </div>
+</div>
+    </div>
+
+<div class="textul">
+    <p>Achizitioneaza in perioada <span style="color: paleturquoise">25 noiembrie - 10 decembrie</span> si primeste o reducere de <span style="color: red">30%</span>!</p>
+</div>
+
+</body>
+<hr>
+<footer>
+    <span style="color: red">@</span> <span>Cadi</span>
+
+</footer>
+</html>
+

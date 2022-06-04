@@ -1,0 +1,122 @@
+.primtext {
+   text-align: center;
+    color: aliceblue;
+    font-family: Arial, serif;
+    background-color: #003249;
+    background-size: contain;
+    width: 100%;
+    border: none;
+    border-radius:25px;
+}
+
+.div2 {
+ color: aliceblue;
+ text-align: center;
+}
+
+.spatiere {
+ color: aliceblue;
+ text-effect: emboss;
+ text-align: center;
+ padding: 60px 35px 50px 20px;
+}
+
+.doitext {
+ text-align: center;
+ color: aliceblue;
+ font-family: "Arial", sans-serif ;
+ background-color: #003249;
+ width: 100%;
+ border: none;
+ border-radius:25px;
+}
+
+.lista{
+ text-align: center;
+ list-style-position: inside;
+}
+
+.tabere{
+ font-size: x-large;
+ alignment: center;
+ font-style: italic;
+ color: floralwhite;
+}
+
+.tabara1{
+text-align: center;
+ color: aliceblue;
+ margin-bottom: 150px;
+ margin-left: 300px;
+ margin-right: 300px;
+
+}
+
+.imgtb1{
+ float: left;
+margin-left: 280px;
+ margin-right: 80px;
+ border-radius: 20px;
+ margin-top:40px;
+}
+
+.tabara2{
+ text-align: center;
+ color: aliceblue;
+ margin-left: 280px;
+ margin-right: 150px;
+ margin-top: 50px;
+
+
+}
+
+.imgtb2{
+ float: right;
+ margin-left: 80px;
+ margin-right: 280px;
+ border-radius: 20px;
+margin-top: 50px
+}
+
+.ateliere {
+ background-color: #007EA7;
+ margin-top: 100px;
+ height: 350px;
+ margin-bottom: 50px;
+
+}
+
+.frecvente{
+ text-align: center;
+ font-family: "Source Code Pro", serif;
+ font-size: large;
+ color: #CCDBDC;
+}
+
+.bold {
+ color: #9AD1D4;
+ font-size: larger;
+ font-family: "Source Code Pro", serif;
+}
+.textul {
+ color: ivory;
+ padding-bottom: 20px;
+}
+
+footer {
+ margin-top: 10px;
+ text-align: center;
+ horiz-align: center;
+ color: #2BD6B4;
+ height: 40px;
+ position: relative;
+ margin-bottom: -100%;
+}
+
+body{
+
+ background-color: #181D31;
+ text-align: center;
+ font:600 16px/18px 'Open Sans',sans-serif;
+ padding-bottom: 50px;
+}

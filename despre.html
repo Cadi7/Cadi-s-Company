@@ -1,0 +1,257 @@
+<!doctype html>
+<html class="no-js" lang="RO" >
+
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="despre.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Lucru individual nr.2</title>
+
+    <h1>Cadi's Company</h1>
+
+    <nav>
+        <a href="index.html">Acasa</a>
+        <a href="despre.html">Despre</a>
+        <a href="oferte.html">Oferte</a>
+        <a href="contact.html">Contact</a>
+        <a onclick="document.getElementById('id01').style.display='block'">Login</a>
+        <div class="animation start-despre"></div>
+    </nav>
+
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+            <div class="login-wrap">
+                <div class="login-html">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Logare</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Inregistrare</label>
+                    <div class="login-form">
+
+                        <div class="sign-in-htm">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="group">
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> &nbsp; Pastrează-mă logat/ă</label>
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Loghează-mă">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai uitat parola?</a>
+                            </div>
+                        </div>
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <br>
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Repeta parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Adresa de e-mail</label>
+                                <input id="pass" type="text" class="input">
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Inregistrează-mă">
+                            </div>
+
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai deja un cont?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        var modal = document.getElementById('id01');
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function alerta() {
+            alert("Functie indisponibila");
+        }
+
+        window.onload = function(){
+            document.getElementById('close').onclick = function(){
+                this.parentNode.parentNode.parentNode
+                    .removeChild(this.parentNode.parentNode);
+                return false;
+            };
+        };
+    </script>
+</head>
+<body bgcolor="#181D31">
+
+<div class="dptext">
+    Școala de Programare pentru Elevi cu vârstele între 7-17 ani
+</div>
+
+<div class="introducere">
+    <p>
+    Cadi School a început în 2021 în Chisinau, Moldova.
+<br>
+    Astăzi predăm în 69+ locații în 6 țări,
+    iar numărul cursanților noștri crește exponențial.
+<br>
+    Mai mult de 90.000 cursanți au avut ocazia până acum să parcurgă cursurile noastre și să vadă cum, la
+    Cadi School, programarea este o activitate plăcută.
+    </p>
+</div>
+
+<div class="pozetext">
+<div class="col1">
+    <img src="col1.png" alt="">
+<p class="textmare">
+    Platforma proprie
+</p>
+
+    <p class="textmic">
+        Elevii învață programarea pe platforma noastră proprie, gândită special
+        pentru procesul de învățare și adaptată vârstelor, într-un cadru care
+        să îi inspire și motiveze să învețe cu sprijinul instructorilor.
+        Pot începe să învețe să programeze la orice vârstă, iar curricula se întinde pe mai mulți ani.
+    </p>
+</div>
+
+<div class="col2">
+    <img src="col2.png" alt="">
+    <p class="textmare">
+        Curriculum modular
+    </p>
+
+    <p class="textmic">
+        Metodologia noastră de predare are la bază module interconectate.
+        Pe măsură ce elevii avansează de la un modul la altul,
+        aceștia dobândesc noțiuni noi de programare și pun în practică abilitățile dobândite anterior.
+    </p>
+</div>
+
+<div class="col3">
+    <img src="col3.png" alt="">
+    <p class="textmare">
+        Știința viitorului
+    </p>
+
+    <p class="textmic">
+        În câțiva ani cunoștințele de programare și IT vor deveni la fel
+        de importante ca și cele de limbi străine. Este o investiție excelentă,
+        întrucât cerințele pentru personal cu cunoștințe de programare sunt în creștere constantă peste tot în lume.
+    </p>
+</div>
+</div>
+
+<div class="dptext2">
+    Cum predam?
+</div>
+
+<div class="pozetext2">
+    <div class="col11">
+    <img src="cc1.png" alt="">
+        <br>
+      <p class="ttitlu">  Senzație rapidă de avansare și succes </p>
+    </div>
+    <div class="col11">
+    <img src="cc2.png" alt="">
+        <br>
+        <p class="ttitlu"> Mediu inspirațional </p>
+    </div>
+        <div class="col11">
+    <img src="cc3.png" alt="">
+            <br>
+            <p class="ttitlu">  Instructori tineri și entuziaști </p>
+        </div>
+</div>
+
+<div class="pozetext22">
+
+    <div class="col44" >
+    <img src="cc4.png" alt="">
+        <br>
+        <p class="ttitlu">   Grupe de 6 până la 12 cursanți </p>
+    </div>
+        <div class="col55">
+            <img src="cc5.png" alt="">
+            <br>
+            <p class="ttitlu">  Tot echipamentul pus la dispoziție </p>
+        </div>
+</div>
+
+<div class="citat">
+    " De la telefoane la mașini, medicina și tot așa, tehnologia este importantă în fiecare aspect din viața noastră.
+    Dacă știi să creezi tehnologie, poți schimba lumea.  "
+</div>
+
+
+
+
+<div style="text-align: center; margin-top: 40px;  padding-top: 20px;  border-radius:25px; margin-bottom: 30px">
+    <p style="color: aliceblue; font-size: x-large; margin-bottom: 15px">
+        Comentarii
+    </p>
+<div class="comentarii">
+
+    <div class="col44" style="margin-right: 100px">
+        <p class="textmare" style="color: lightblue">
+     Părinți
+            </p>
+        <p class="parinti">
+        <ul type="square">
+        <li class="spatiu"> Un loc inovativ, centrat pe nevoile copiilor, cu o atmosferă distractivă și prietenoasă.</li>
+        <li class="spatiu">Un loc inovativ, centrat pe nevoile copiilor, cu o atmosferă distractivă și prietenoasă.</li>
+        <li class="spatiu">Fiica mea are cunoștințe de cea mai înaltă calitate și chiar îi place. :) </li>
+        <li class="spatiu"> Este cea mai bună idee pentru a stabili bazele viitorului fiului meu.
+            Când va crește, aceste cunoștințe vor fi la fel de esențiale pentru un adult ca vorbitul limbilor străine. </li>
+    </ul>
+        </p>
+    </div>
+    <div class="col55" style="margin-left: 100px">
+        <p class="textmare" style="color: lightblue">
+            Studenti
+        </p>
+        <p>
+        <ul type="square">
+            <li> Cea mai bună școală din lume! <p class="elevi"> (Martin, 10 ani)</p></li>
+        <li> Este fascinant cum poți crea o lume din linii de cod.  <p class="elevi">  (Bogdan, 13 ani)</p></li>
+        <li> Înainte de a face cunoștință cu toate aceste lucruri noi, am crezut că este mult mai greu.<p class="elevi">(Mirabela, 14 ani)</p></li>
+        <li> Ne permite sa creăm un univers nu chiar separat de lumea noastră, care lucrează în cooperare cu noi.  <p class="elevi"> (Ion, 17 ani) </p></li>
+        </ul>
+        </p>
+        <br>
+        <p class="">  </p>
+    </div>
+</div>
+</div>
+<hr>
+</body>
+
+<footer>
+    <span style="color: red">@</span> <span>Cadi</span>
+</footer>

@@ -1,0 +1,36 @@
+<div class="filiale">
+
+    <div class="filiala1">
+
+        <p class =text1>
+    <span>Filiala 1</span> <br>
+            <span class="primtext"> Adresa: </span> <span class="doitext">Strada Iordache Golescu 17, Bucuresti </span> <br>
+            <span class="primtext"> Coordonatorul scolii: </span> <span class="doitext">Finica Cristian </span> <br>
+            <span class="primtext"> Email: </span> <span class="doitext">info@cadi.team</span> <br>
+            <span class="primtext"> Telefon:  </span> <span class="doitext">022-069-690 </span> <br>
+        </p>
+    </div>
+<div class="poza">
+<img src="contact.png" alt="">
+</div>
+    <div class="filiala2">
+        <p class =text1>
+            <span>Filiala 1</span>  <br>
+            <span class="primtext"> Adresa: </span> <span class="doitext">Strada Lugojului 41, Oradea </span> <br>
+            <span class="primtext"> Coordonatorul scolii: </span> <span class="doitext">Celac Renata </span> <br>
+            <span class="primtext"> Email: </span> <span class="doitext">info@cadi.team</span> <br>
+            <span class="primtext"> Telefon:  </span> <span class="doitext">022-690-069 </span> <br>
+        </p>
+    </div>
+</div>
+
+
+<div class ="mape">
+    <div class="mapa1">
+
+    </div>
+
+    <div class="mapa2">
+
+    </div>
+</div>

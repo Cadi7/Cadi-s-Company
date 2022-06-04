@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="RO" >
+
+<head>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="tooltip.css">
+  <title>Lucru individual nr.2</title>
+
+  <h1>Cadi's Company</h1>
+
+  <nav>
+    <a href="index.html">Acasa</a>
+    <a href="despre.html">Despre</a>
+    <a href="oferte.html">Oferte</a>
+    <a href="contact.html">Contact</a>
+    <a onclick="document.getElementById('id01').style.display='block'">Login</a>
+    <div class="animation start-home"></div>
+  </nav>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post">
+            <div class="login-wrap">
+                <div class="login-html">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Logare</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Inregistrare</label>
+                    <div class="login-form">
+
+                        <div class="sign-in-htm">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="group">
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> &nbsp; Pastrează-mă logat/ă</label>
+                            </div>
+                            <div class="group" onclick="alerta()">
+                                <input type="submit" class="button" value="Loghează-mă">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai uitat parola?</a>
+                            </div>
+                        </div>
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <br>
+                                <label for="user" class="label">Utilizator</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Repeta parola</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Adresa de e-mail</label>
+                                <input id="pass" type="text" class="input">
+                            </div>
+                            <div class="group" onclick="alerta()">
+                              <input type="submit" class="button" value="Inregistrează-mă">
+                            </div>
+
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a onclick="alerta()" style="color: #80CED7">Ai deja un cont?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+  <script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    function alerta() {
+      alert("Functie indisponibila");
+    }
+
+    window.onload = function(){
+      document.getElementById('close').onclick = function(){
+        this.parentNode.parentNode.parentNode
+                .removeChild(this.parentNode.parentNode);
+        return false;
+      };
+    };
+  </script>
+
+</head>
+
+<body bgcolor="#181D31">
+<br>
+<br>
+<br>
+<div class="primtext">
+  <br>
+  <h2>DE CE ESTE PROGRAMAREA ATÂT DE IMPORTANTĂ?</h2>
+  <br>
+    <div style="font-size: medium">
+  Copiii folosesc în mod firesc calculatorul, tableta sau telefoanele inteligente.
+  Există însă posibilitatea ca ei să le folosească într-un mod care va avea un impact pozitiv asupra vieții lor, mai
+  departe.
+    </div>
+  <br>
+  <br>
+    <br>
+</div>
+
+<div style="padding-top: 30px" class="div2">
+  <div class="tooltip">
+  <span class="spatiere" >
+ <img src="image.png" alt="" style="width: 65px; height=65px">
+     <div class="tooltip">Gandire algoritmica <span class="tooltiptext">Elevii noștri învață cum să abordeze logic o temă
+       și cum să își îmbunătățească abilitățile de rezolvare a problemelor.
+       Vor aborda mai relaxați procese complexe și vor putea să își îmbunătățească și rezultatele școlare. </span>
+       </div>
+    </span>
+    </div>
+
+
+    <span class="spatiere" >
+<img src="image%20(1).png" alt="" style="width: 65px; height: 65px">
+  <div class="tooltip">Alfabetizarea digitală
+     <span class="tooltiptext">Alfabetizarea digitală devine una dintre abilitățile de bază ale secolului 21;
+       elevii noștri nu sunt doar utilizatori pasivi ai tehnologiei, ci sunt cei care o vor transforma mai departe.
+     </span>
+</div>
+    </span>
+
+  <span class="spatiere" >
+  <img src="image%20(2).png" alt="" style="width: 65px; height: 65px">
+  <div class="tooltip">Creativitate
+    <span class="tooltiptext">Elevii noștri învață să programeze în timp ce se joacă, prin metoda noastră
+      de predare bazată pe experimentarea proprie.
+      Învățându-i să programeze jocuri, noi creăm defapt spațiu pentru creativitatea lor,
+      lăsându-i să experimenteze și să creeze ceea ce le place cu adevărat.
+      </span>
+       </div>
+    </span>
+  <br> <br> <br>
+
+
+  <div class="tooltip">Cool
+    <span class="tooltiptext">Cu noi învață să creeze singuri jocuri pe calculator, animații, aplicații cool și să programeze roboți.
+      </span>
+  </div>
+       <span class="spatiere" >
+          <img src="image%20(3).png" alt="" style="width: 65px; height: 65px">
+    </span>
+
+  <span class="spatiere" >
+  <img src="image%20(4).png" alt="" style="width: 65px; height: 65px">
+    </span>
+
+
+  <div class="tooltip">Cariere
+    <span class="tooltiptext">Chiar dacă nu toți elevii vor alege să devină programatori profesioniști în viitor,
+      vor putea să se folosească de cunoștințele dobândite aici în aproape orice carieră vor alege mai departe.
+       </span>
+  </div>
+  </div>
+<br>
+<br>
+<hr style="color: lightblue">
+<br>
+<br>
+
+<div class="doitext">
+  <br>
+  <h2>De ce Cadi School?</h2>
+  <br>
+  <ul type="square" class="lista">
+    <li>
+      Predăm programarea deja de 6 ani și mai mult de 90.000 de elevi au participat la cursurile noastre. Atât elevii noștri cât și părinții lor spun că ne descurcăm bine :).
+    </li>
+    <li>
+      Platforma noastră este potrivită pentru elevi de toate vârstele și nivelurile de pregătire, de la cei mici la cei mai mari.
+    </li>
+    <li>
+      Noi credem că învățarea uneia dintre cele mai utile abilitați pentru viitor poate să fie plăcută și distractivă.
+    </li>
+    <li>
+      Din ce în ce mai mulți elevi din lumea întreagă au început să învețe programare. De ce nu ai fi și tu unul dintre ei? Poți participa chiar și online!
+    </li>
+  </ul>
+
+  <br>
+  <br>
+  <br>
+</div>
+
+<br>
+<br>
+<div>
+<div class="tabere" align="center">
+    <br>
+    CURSURI ȘI TABERE DE PROGRAMARE
+    <br>
+    <br>
+</div>
+
+  <br>
+    <img src="tabara1.jpg" alt="" align="left" class="imgtb1" height="352" width="503">
+
+  <div class="tabara1">
+    <br>
+    <br>
+    <br>
+    <br>
+<h2>Cursuri simestriale</h2>
+    <hr>
+    <br>
+    Avem un număr de școli în creștere în toată Europa și începând de acum și în Moldova, școli în care copiii pot învăța programare și discipline adiacente,
+    în cursuri de câte 90 de minute, o dată pe săptămână,
+    într-un mediu care să îi inspire, disponibile online și la sediul școlilor. <br> <br>
+    Copiii sunt încurajați și sprijiniți de instructorii noștri tineri, curriculum-ul nostru adaptat pe categorii de vârstă și
+    platforma noastră educațională proprie care este la standarde internaționale și pe care o dezvoltăm încontinuu.
+
+  </div>
+</div>
+
+
+<div class="ateliere">
+
+
+  <img src="tabara2.jpg" alt="" align="right" class="imgtb2" height="258" width="570">
+
+  <div class="tabara2">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Tabere / Ateliere</h2>
+    <hr>
+    <br>
+    Organizăm o multitudine de module foarte apreciate, pe mai multe teme, disponibile online și la sediile școlilor.
+    Copiii pot intra cu totul în lumea dezvoltării de jocuri și aplicații, editarea de pagini web, editarea foto-video sau Minecraft.
+
+  </div>
+</div>
+
+
+<div class="frecvente">
+  <h2> <i> <u>  Intrebari frecvente  </i> </u> </h2>
+  <p class="bold" style="padding-top: 10px"> Ce fel de cunoștințe învață copiii la Cadi School? </p>
+  <p class="textul">
+  Elevii noștri învață gândirea algoritmică, care este o abilitate foarte importantă pentru mai târziu, indiferent de ...  </p>
+
+ <p class="bold"> Când încep și când se termină cursurile? </p>
+  <p class="textul">
+  În anul școlar 2020 - 2021 cursurile noastre încep în mod obișnuit pe 14 septembie, dar te rugăm să ai în vedere...
+  </p>
+    <p class="bold">Când se țin cursurile? </p>
+  <p class="textul">
+  Cursurile au loc în sesiuni de 90 de minute, săptămânal pe perioada cursului. Frecvența, zilele și intervalele orare se pot selecta în formularele de înregistrare....
+  </p>
+      <p class="bold" >Cum pot pune o intrebare proprie? </p>
+  <p class="textul">
+  Intra pe adresa paginii FAQ si completeaza formularul de acolo.
+  </p>
+</div>
+
+
+<hr>
+</body>
+
+
+<footer>
+    <span style="color: red">@</span> <span>Cadi</span>
+</footer>
+</html>

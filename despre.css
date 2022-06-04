@@ -1,0 +1,183 @@
+
+
+.dptext {
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+    color: floralwhite;
+    background-color: #007EA7;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 50px
+}
+
+.introducere {
+    margin-top: 30px;
+text-align: center;
+    color: aliceblue;
+    background-color: #003249;
+    border-radius:25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.col1 {
+    padding-right: 50px;
+}
+
+.col2 {
+    padding-right: 50px;
+}
+
+.col3 {
+    padding-right: 50px;
+}
+
+body {
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+p.textmare{
+font-size: larger;
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p.textmic {
+    color: aliceblue;
+    font-size: medium;
+
+}
+
+.pozetext{
+
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 12%;
+}
+img {
+
+    height: 120px;
+}
+
+.dptext2 {
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+    color: floralwhite;
+    background-color: #007EA7;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 50px
+}
+
+.col11 {
+    padding-right: 50px;
+}
+
+.col44 {
+    padding-left: 50%;
+}
+
+.col55 {
+    padding-right: 50%;
+}
+
+p.textm{
+    font-size: larger;
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+.pozetext2{
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.pozetext22{
+
+    padding-top: 20px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #003249;
+    border-radius:25px;
+}
+
+p.ttitlu{
+    padding-top: 5px;
+    color: aliceblue;
+}
+
+.citat{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Constantia, sans-serif;
+    text-align: center;
+    color: seashell;
+    background-color: #007EA7;
+    font-style: italic;
+    font-size: large;
+}
+
+.comentarii{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+li{
+    color: azure;
+}
+
+p.elevi{
+    margin-top: 0px;
+    font-size: small;
+}
+
+
+li.spatiu{
+    padding-bottom: 15px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    horiz-align: center;
+    color: #2BD6B4;
+    height: 40px;
+    position: relative;
+    margin-bottom: -100%;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+body{
+
+    background-color: #181D31;
+    text-align: center;
+    padding-bottom: 50px;
+}
